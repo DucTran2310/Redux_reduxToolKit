@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import { Divider, Typography } from 'antd';
 import './App.css';
+import Filters from './components/Filters/Filters';
+import TodoList from './components/TodoList/TodoList';
+
+const { Title } = Typography;
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Title style={{ textAlign: 'center', fontSize: '36px' }}>TO DO APP WITH REDUX</Title>
+      <Filters />
+      <Divider />
+      <TodoList />
     </div>
   );
 }
