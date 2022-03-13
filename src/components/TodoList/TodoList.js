@@ -18,7 +18,7 @@ const TodoList = () => {
   const dispatch = useDispatch();
 
   const handleAddTodo = () => {
-    dispatch(todoListSlices.action.addTodo({
+    dispatch(todoListSlices.actions.addTodo({
       id: uuidv4(),
       name: todoName,
       priority: priority,
