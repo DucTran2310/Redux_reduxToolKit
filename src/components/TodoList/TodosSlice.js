@@ -22,6 +22,7 @@
 
 import { createSlice } from '@reduxjs/toolkit';
 
+// createSlice kết hợp 2 hàm createReducer và createAction
 export default createSlice({
   name: 'todoList',
   initialState: [
